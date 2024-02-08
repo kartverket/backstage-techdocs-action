@@ -29,7 +29,7 @@ jobs:
         with:
           entity_kind: '<kind-lowercase>'
           entity_name: '<same-as-repo>'
-```       gcs_bucket_name: ${{vars.BACKSTAGE_TECHDOCS_GCS_BUCKET_NAME_SANDBOX}}
+          gcs_bucket_name: ${{vars.BACKSTAGE_TECHDOCS_GCS_BUCKET_NAME_SANDBOX}}
           workload_identity_provider: ${{vars.BACKSTAGE_TECHDOCS_WIF_SANDBOX}}
           service_account: ${{vars.BACKSTAGE_TECHDOCS_SERVICE_ACCOUNT_SANDBOX}}
           project_id: ${{vars.BACKSTAGE_TECHDOCS_PROJECT_ID}}
