@@ -1,6 +1,6 @@
 # backstage-techdocs-action
 
-This action generates static documentation from your Backstage TechDocs and deploys it to GCS.
+This action generates static documentation from your Backstage TechDocs and deploys it to GCS using WIF.
 
 ## Usage
 
