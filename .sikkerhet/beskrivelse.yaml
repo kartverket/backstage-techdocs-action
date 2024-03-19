@@ -1,5 +1,5 @@
 version: 2.0
 organization: IT
 product: Backstage
-repo_types: [[Library]]
-platforms: [[]]
+repo_types: [Library]
+platforms: []
