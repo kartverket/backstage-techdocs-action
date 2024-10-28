@@ -10,29 +10,3 @@ spec:
   lifecycle: "production"
   owner: "skip"
   system: "utviklerportal"
----
-apiVersion: "backstage.io/v1alpha1"
-kind: "Group"
-metadata:
-  name: "security_champion_backstage-techdocs-action"
-  title: "Security Champion backstage-techdocs-action"
-spec:
-  type: "security_champion"
-  parent: "it_security_champions"
-  members:
-  - "omaen"
-  children:
-  - "resource:backstage-techdocs-action"
----
-apiVersion: "backstage.io/v1alpha1"
-kind: "Resource"
-metadata:
-  name: "backstage-techdocs-action"
-  links:
-  - url: "https://github.com/kartverket/backstage-techdocs-action"
-    title: "backstage-techdocs-action på GitHub"
-spec:
-  type: "repo"
-  owner: "security_champion_backstage-techdocs-action"
-  dependencyOf:
-  - "component:backstage-techdocs-action"
