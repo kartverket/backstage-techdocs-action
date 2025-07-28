@@ -34,3 +34,18 @@ jobs:
           service_account: '<gcp-service-account-email>'
           project_id: '<gcp-project-id>'
 ```
+
+## Dependency review
+
+To avoid failing dependency review in PRs, you can add this action to exceptions like this:
+
+```
+     - name: Perform dependency review
+        uses: actions/dependency-review-action@v4
+        if: github.event_name == 'pull_request'
+        with:
+          comment-summary-in-pr: always
+          fail-on-severity: moderate
+          allow-dependencies-licenses: |
+            pkg:github/kartverket/backstage-techdocs-action
+```
